@@ -29,8 +29,6 @@ const csvPath = new URL("../tasks.csv", import.meta.url).pathname;
                 }) ,
                 // duplex: 'half'
             })
-            .then((response) => response.text())
-            .then((data)=> console.log("data:",data))
         }
     } catch (err) {
         console.error("Error:", err)
